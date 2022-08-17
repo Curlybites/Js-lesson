@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+:root{
+    --title:#00203fff;
+    --primary-background: rgb(49, 184, 208);
+    --font:#FFF;
+}
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mouse Memoirs', sans-serif;
+  
+    
+}
+
+body{
+    height: 100vh;
+}
+
+.title{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--title);
+    color: var(--font);
+    font-size: 2.1rem;
+}
+
+.wallpaper{
+    display: grid;
+     grid-template-columns: auto auto auto;
+  
+}
+
+.datetime{
+    width: 500px;
+    height: 500px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 35%;
+    text-align: center;
+    border-radius: 3rem;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    cursor: pointer;
+}
+.datetime p{
+    margin: 5rem;
+    font-size: 2.5rem;
+}
+
+.datetime:hover{
+    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), 
+           inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+
